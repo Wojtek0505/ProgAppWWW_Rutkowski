@@ -1,0 +1,179 @@
+:root {
+    --kolor-glowny: #174a70;
+    --kolor-tekstu: #222222;
+    --kolor-tla: #f4f6f8;
+    --odstep: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--kolor-tekstu);
+    background-color: var(--kolor-tla);
+}
+
+header {
+    background-color: var(--kolor-glowny);
+    color: white;
+    text-align: center;
+    padding: var(--odstep);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: var(--odstep);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--odstep);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: var(--kolor-glowny);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.karta {
+    background-color: white;
+    padding: var(--odstep);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+section[aria-label="Katalog produktów"] {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--odstep);
+}
+
+@media (min-width: 768px) {
+    section[aria-label="Katalog produktów"] {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--odstep);
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: var(--odstep);
+    font: inherit;
+}
+
+a:hover {
+    color: #b34200;
+}
+
+a:focus-visible {
+    outline: 3px solid #b34200;
+    outline-offset: 3px;
+}
+
+button {
+    background-color: var(--kolor-glowny);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d304b;
+}
+
+button:focus-visible {
+    outline: 3px solid #b34200;
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: var(--kolor-glowny);
+    color: white;
+    text-align: center;
+    padding: var(--odstep);
+    margin-top: var(--odstep);
+}
+
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+p {
+    overflow-wrap: anywhere;
+}
+
+form {
+    max-width: 600px;
+}
+
+[data-theme="dark"] {
+    --kolor-tekstu: #f1f1f1;
+    --kolor-tla: #181818;
+}
+
+
+[data-theme="dark"] .karta {
+    background-color: #262626;
+    color: var(--kolor-tekstu);
+}
+
+[data-theme="dark"] nav {
+    background-color: #202020;
+}
+
+[data-theme="dark"] nav a {
+    color: #f1f1f1;
+}
+
+[data-theme="dark"] nav a:hover {
+    color: #8ecbff;
+}
+
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+    background-color: #262626;
+    color: #f1f1f1;
+    border: 1px solid #666666;
+}
+
+[data-theme="dark"] input:focus-visible,
+[data-theme="dark"] select:focus-visible,
+[data-theme="dark"] textarea:focus-visible {
+    outline: 2px solid #8ecbff;
+    outline-offset: 2px;
+}
+
