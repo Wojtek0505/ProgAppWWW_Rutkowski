@@ -1,0 +1,89 @@
+<section aria-labelledby="zegar-naglowek">
+    <h2 id="zegar-naglowek">Aktualna data i godzina</h2>
+
+    <p id="clock" aria-live="polite">
+        Ładowanie daty i godziny...
+    </p>
+
+    <button type="button" id="clock-start">Start</button>
+    <button type="button" id="clock-stop">Stop</button>
+</section>
+
+<h2>Nasze produkty</h2>
+<div>
+    <label for="product-search">Szukaj produktu:</label>
+    <input
+        type="search"
+        id="product-search"
+        placeholder="Wpisz nazwę produktu..."
+    >
+    <p id="filter-count" aria-live="polite"></p>
+    <p id="filter-empty" hidden>Nie znaleziono produktów.</p>
+</div>
+
+<section aria-label="Katalog produktów">
+    <article class="karta">
+        <h3>Telewizor Samsung UE55U8092HU</h3>
+        <a href="html/produkt.html">
+            <img src="img/telewizor.webp"
+                 alt="Telewizor Samsung UE55U8092HU"
+                 width="1500" height="1000">
+        </a>
+        <p>Telewizor Smart TV 4K.</p>
+        <p>Cena: 2 999,00 zł</p>
+    </article>
+
+    <article class="karta">
+        <h3>Słuchawki JLab GO Lux ANC</h3>
+        <img src="img/sluchawki.webp"
+             alt="Słuchawki bezprzewodowe JLab GO Lux ANC w kolorze grafitowym"
+             width="1100" height="1100">
+        <p>Bezprzewodowe słuchawki nauszne z aktywną redukcją hałasu.</p>
+        <p>Cena: 169,99 zł</p>
+    </article>
+
+    <article class="karta">
+        <h3>Termorobot MPM TRM-01</h3>
+        <img src="img/termorobot.webp"
+             alt="Termorobot kuchenny MPM TRM-01"
+             width="1200" height="1704">
+        <p>Wielofunkcyjne urządzenie kuchenne.</p>
+        <p>Cena: 1 895,00 zł</p>
+    </article>
+</section>
+
+<section id="lab3-demo">
+    <h2>Demonstracja animacji jQuery</h2>
+
+    <div class="animation-container">
+        <button type="button" class="animated-box" id="animation-a">
+            Animacja A
+        </button>
+
+        <button type="button" class="animated-box" id="animation-b">
+            Animacja B
+        </button>
+
+        <button type="button" class="animated-box" id="animation-c">
+            Animacja C
+        </button>
+    </div>
+
+    <p id="animation-status" role="status">
+        Liczba powiększeń: 0
+    </p>
+
+    <button type="button" id="animation-reset">
+        Resetuj A i C
+    </button>
+
+    <div class="server-check">
+        <button type="button" id="server-check-button">
+            Sprawdź serwer
+        </button>
+
+        <p id="server-check-result" role="status">
+            Brak sprawdzenia serwera.
+        </p>
+    </div>
+</section>
